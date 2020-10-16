@@ -1,0 +1,11 @@
+GET http://localhost:3000/sql/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.YQ.44yZU_EalIABE9UJsIRXYmMxqod3IBHXHK37ZDdxVws
+
+###
+
+POST http://localhost:3000/auth/new
+Content-Type: application/json
+
+{
+"key": "Jim"
+}

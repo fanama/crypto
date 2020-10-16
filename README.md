@@ -1,4 +1,4 @@
-# Express-React-typescript
+# Express-React-typescript-JWT
 
 ## install
 

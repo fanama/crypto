@@ -3,10 +3,11 @@ import 'regenerator-runtime/runtime'
 
 class Postier{
 
-    async sendRequest(request:string,setToken){
+    async getValue(request:string,setData){
 
-        axios.post('auth/new',{key:request}).then(res=>{
-            setToken(res.data.accessToken)
+
+        axios.get(`/trans/${request}`).then(res=>{
+            setData(res.data)
         })
 
     }

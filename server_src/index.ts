@@ -9,7 +9,7 @@ const server = express()
 server.use(express.urlencoded({extended:false}))
 server.use(express.json())
 server.use(express.static(resolve(__dirname)+'/public'))
-server.use('/sql',router)
+server.use('/trans',router)
 server.use('/auth',auth)
 
 server.get('/',(req,res)=>{
